@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+.container{
+    padding: 0px 100px;
+    margin-top: 60px;
+}
+
+@media screen and (max-width:768px){
+    .container{
+        padding: 0 30px;
+        margin-top: 30px;
+    }
+}
+
+img{
+    border-radius: 20px;
+}
+h2{
+    font-weight: 600;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: maroon;
+}
+@media screen and (max-width:768px){
+    h2{
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+}
+@media screen and (max-width:512px){
+    h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 100px;
+}
+@media screen and (max-width:768px){
+    .main{
+        display: block;
+    }
+}
+
+
+
+/* Header Scetion */
+.Header{
+    text-align: center;
+    background-color:maroon;
+    color: antiquewhite;
+    padding: 24px 0;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:768px){
+    .Header{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:512px){
+    .Header{
+        font-size: 18px;
+    }
+}
+
+
+/* Ingredients Scetion */
+.ingredient{
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+@media screen and (max-width:768px){
+    .ingredient{
+        margin-bottom: 50px;
+    }
+}
+.ingredient-info{
+    display: flex;
+    align-items: center;
+    
+}
+@media screen and (max-width:512px){
+    .ingredient-info{
+        flex-direction: column;
+    }
+}
+#ingredient-pic{
+    height: 600px;
+    border-left: 6px solid maroon;
+    border-bottom: 6px solid maroon;
+}
+@media screen and (max-width:512px){
+    #ingredient-pic{
+        height:500px ;
+        border-left: 4px solid maroon;
+        border-bottom: 4px solid maroon;
+        margin-bottom: 20px;
+    }
+}
+.ingredient-text{
+    margin-left: 50px;
+    font-size: 22px;
+    list-style: circle;   
+}
+@media screen and (max-width:512px){
+    .ingredient-text{
+        font-size: 20px;
+    }
+}
+
+
+/* Steps Section */
+.steps{
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+@media screen and (max-width:768px){
+    .steps{
+        margin-bottom: 30px;
+        border-top: 2px solid maroon;
+        border-bottom: 2px solid maroon;
+        padding: 20px 0;
+    }
+}
+.steps-text{
+    font-size: 22px;
+}
+@media screen and (max-width:768px){
+    .steps-text{
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width:512px){
+    .steps-text{
+        font-size: 20px;
+    }
+}
+
+
+/* Serve Section  */
+.serve{
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    margin-bottom: 80px;
+}
+@media screen and (max-width:512px){
+    .serve{
+        margin-bottom: 50px;
+    }
+}
+.serve-info{
+    display: flex;
+    justify-content: space-between;
+    
+}
+@media screen and (max-width:768px){
+    .serve-info{        
+        flex-direction: column-reverse;
+    }
+}
+.serve-text{
+    width: 50%;
+    font-size: 24px;
+}
+@media screen and (max-width:768px){
+    .serve-text{        
+        align-self: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width:512px){
+    .serve-text{
+        font-size: 20px;
+    }
+}
+#serve-pic{
+    height: 600px;
+    width: 40%;
+    object-fit: cover;
+    border-left: 10px solid maroon;
+    border-bottom: 10px solid maroon;
+}
+@media screen and (max-width:768px){
+    #serve-pic{        
+        border-left: 6px solid maroon;
+        border-bottom: 6px solid maroon;
+        width: 80%;
+        align-self: center;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:512px){
+    #serve-pic{
+        height: 500px;
+    }
+}
+
+
+/* Footer Section */
+footer{
+    background-color: rgb(168, 149, 123);
+    padding: 20px 100px;
+    color: antiquewhite;
+    text-align: end;
+}
+@media screen and (max-width:512px){
+    footer{
+        text-align: center;
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+}
+footer > a{
+    text-decoration: none;
+    color: black;
+}
